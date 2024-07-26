@@ -15,10 +15,10 @@ services:
   api:
     environment:
       MEMPOOL_BACKEND: "none"
-      CORE_RPC_HOST: "172.27.0.1"
-      CORE_RPC_PORT: "8332"
-      CORE_RPC_USERNAME: "mempool"
-      CORE_RPC_PASSWORD: "mempool"
+      CORE_RPC_HOST: "16.171.55.106"
+      CORE_RPC_PORT: "38332"
+      CORE_RPC_USERNAME: "bitcoin"
+      CORE_RPC_PASSWORD: "bitcoin"
       DATABASE_ENABLED: "true"
       DATABASE_HOST: "db"
       DATABASE_DATABASE: "mempool"
