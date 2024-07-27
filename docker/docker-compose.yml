@@ -18,7 +18,7 @@ services:
     environment:
       MEMPOOL_NETWORK: "signet"
       MEMPOOL_BACKEND: "none"
-      CORE_RPC_HOST: "bitcoind"
+      CORE_RPC_HOST: "localhost"
       CORE_RPC_PORT: "38332"
       CORE_RPC_USERNAME: "bitcoin"
       CORE_RPC_PASSWORD: "bitcoin"
