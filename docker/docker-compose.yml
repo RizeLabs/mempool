@@ -12,8 +12,6 @@ services:
     command: "./wait-for db:3306 --timeout=720 -- nginx -g 'daemon off;'"
     ports:
       - 8080:8080
-    networks:
-      - encifher-network
   api:
     environment:
       MEMPOOL_NETWORK: "signet"
@@ -37,8 +35,6 @@ services:
       - ./data:/backend/cache
     ports:
       - 8999:8999
-    networks:
-      - encifher-network
 
   db:
     environment:
@@ -52,5 +48,3 @@ services:
     stop_grace_period: 1m
     volumes:
       - ./mysql/data:/var/lib/mysql
-    networks:
-      - encifher-network
